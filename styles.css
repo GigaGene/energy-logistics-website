@@ -150,7 +150,7 @@ img {
 }
 
 .hero-media {
-  background-image: url("assets/energy-logistics-hero.svg");
+  background-image: url("./assets/energy-logistics-hero.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -470,7 +470,7 @@ p {
 .image-panel {
   min-height: 430px;
   border-radius: 8px;
-  background-image: linear-gradient(180deg, rgba(19, 34, 56, 0.05), rgba(19, 34, 56, 0.15)), url("assets/energy-logistics-hero.svg");
+  background-image: linear-gradient(180deg, rgba(19, 34, 56, 0.05), rgba(19, 34, 56, 0.15)), url("./assets/energy-logistics-broker-docks.jpg");
   background-size: cover;
   background-position: center right;
   box-shadow: var(--shadow);
@@ -553,7 +553,7 @@ p {
   color: #fff;
   background:
     linear-gradient(90deg, rgba(10, 23, 40, 0.92), rgba(10, 23, 40, 0.7)),
-    url("assets/energy-logistics-hero.svg") center / cover;
+    url("./assets/energy-logistics-hero.jpg") center / cover;
 }
 
 .page-hero h1 {
