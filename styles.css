@@ -181,4 +181,604 @@ img {
   margin: 24px 0 0;
   color: rgba(255, 255, 255, 0.86);
   font-size: clamp(1.02rem, 2vw, 1.22rem);
-}\n
+}
+
+.hero-actions,
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 13px 22px;
+  font-weight: 800;
+  line-height: 1.1;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease, border-color 180ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgba(242, 138, 32, 0.35);
+  outline-offset: 2px;
+}
+
+.btn-primary {
+  color: #fff;
+  background: var(--orange);
+  box-shadow: 0 12px 28px rgba(242, 138, 32, 0.28);
+}
+
+.btn-primary:hover {
+  background: var(--orange-dark);
+}
+
+.btn-secondary {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.42);
+}
+
+.btn-secondary:hover,
+.btn-outline-light:hover {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.72);
+}
+
+.btn-light {
+  color: var(--navy);
+  background: #fff;
+}
+
+.btn-outline-light {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.66);
+}
+
+.btn-link {
+  color: var(--navy);
+  background: #fff;
+  border-color: var(--line);
+  box-shadow: 0 10px 24px rgba(7, 26, 49, 0.08);
+}
+
+.btn-link:hover {
+  color: #fff;
+  background: var(--navy);
+  border-color: var(--navy);
+}
+
+.section-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.section {
+  padding: 96px 0;
+}
+
+.compact-section {
+  padding: 0;
+}
+
+.trust-section {
+  padding: 62px 0 0;
+}
+
+.section-heading {
+  max-width: 720px;
+  margin-bottom: 38px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--orange);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  overflow-wrap: anywhere;
+}
+
+h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+h3 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  line-height: 1.25;
+}
+
+p {
+  color: var(--muted);
+}
+
+.lead {
+  margin: 18px 0 28px;
+  max-width: 620px;
+  font-size: 1.1rem;
+}
+
+.stat-strip {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  margin-top: -56px;
+  overflow: hidden;
+  background: var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.stat-strip div,
+.credential-grid div {
+  padding: 28px;
+  background: #fff;
+}
+
+.stat-strip span,
+.credential-grid span,
+.contact-card span,
+.site-footer span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.stat-strip strong,
+.credential-grid strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 1.35rem;
+}
+
+.trust-badges {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.trust-badges div {
+  padding: 22px;
+  background: var(--navy);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 14px 34px rgba(7, 26, 49, 0.12);
+}
+
+.trust-badges span {
+  display: block;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.trust-badges strong {
+  display: block;
+  margin-top: 8px;
+  color: #fff;
+  font-size: 1.04rem;
+  line-height: 1.25;
+}
+
+.card-grid,
+.service-grid {
+  display: grid;
+  gap: 22px;
+}
+
+.card-grid.three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.service-grid {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.service-grid .service-card {
+  grid-column: span 2;
+}
+
+.service-card,
+.detail-card,
+.contact-card,
+.program-card {
+  padding: 30px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 12px 35px rgba(19, 34, 56, 0.07);
+}
+
+.icon-box {
+  display: inline-grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 24px;
+  color: #fff;
+  font-weight: 800;
+  background: var(--navy);
+  border-radius: 7px;
+}
+
+.band {
+  background: var(--soft);
+}
+
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.82fr);
+  gap: clamp(32px, 6vw, 74px);
+  align-items: center;
+}
+
+.split.reverse {
+  grid-template-columns: minmax(320px, 0.85fr) minmax(0, 1fr);
+}
+
+.feature-list {
+  display: grid;
+  gap: 16px;
+}
+
+.feature-list div {
+  padding: 22px 24px;
+  background: #fff;
+  border-left: 5px solid var(--orange);
+  border-radius: 7px;
+}
+
+.feature-list p,
+.service-card p,
+.detail-card p,
+.contact-card p {
+  margin-bottom: 0;
+}
+
+.image-panel {
+  min-height: 430px;
+  border-radius: 8px;
+  background-image: linear-gradient(180deg, rgba(19, 34, 56, 0.05), rgba(19, 34, 56, 0.15)), url("./assets/energy-logistics-broker-docks.jpg");
+  background-size: cover;
+  background-position: center right;
+  box-shadow: var(--shadow);
+}
+
+.program-card h3 {
+  font-size: 1.35rem;
+}
+
+.check-list {
+  display: grid;
+  gap: 14px;
+  padding: 0;
+  margin: 18px 0 0;
+  list-style: none;
+}
+
+.check-list li {
+  position: relative;
+  padding-left: 30px;
+  color: var(--steel);
+  font-weight: 700;
+}
+
+.check-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.28em;
+  width: 16px;
+  height: 16px;
+  background: var(--orange);
+  border-radius: 50%;
+}
+
+.large-list {
+  margin-top: 0;
+}
+
+.contact-band {
+  color: #fff;
+  background: linear-gradient(135deg, var(--navy), var(--navy-2));
+}
+
+.contact-band p,
+.contact-band .eyebrow {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.contact-band h2 {
+  color: #fff;
+}
+
+.contact-cta,
+.application-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.inline-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 28px;
+}
+
+.inline-facts span {
+  padding: 8px 12px;
+  color: var(--navy);
+  font-size: 0.9rem;
+  font-weight: 800;
+  background: #fff0df;
+  border-radius: 6px;
+}
+
+.page-hero {
+  padding: 160px 0 78px;
+  color: #fff;
+  background:
+    linear-gradient(90deg, rgba(10, 23, 40, 0.68), rgba(10, 23, 40, 0.38)),
+    url("./assets/energy-logistics-hero.jpg") center center / cover;
+}
+
+.page-hero h1 {
+  max-width: 860px;
+  margin: 0;
+  font-size: clamp(2.35rem, 5vw, 4.65rem);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.page-hero p:not(.eyebrow) {
+  max-width: 680px;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 1.12rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.8fr);
+  gap: clamp(32px, 6vw, 74px);
+  align-items: center;
+}
+
+.credential-panel {
+  display: grid;
+  gap: 16px;
+}
+
+.credential-panel div {
+  padding: 28px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 12px 35px rgba(7, 26, 49, 0.07);
+}
+
+.credential-panel span,
+.contact-cards span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.credential-panel strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 1.25rem;
+}
+
+.credential-panel small {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 34px;
+}
+
+.contact-cards article {
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+}
+
+.contact-cards strong {
+  display: block;
+  margin-top: 8px;
+  color: #fff;
+  overflow-wrap: anywhere;
+}
+
+.contact-card h2 {
+  margin-top: 10px;
+  font-size: clamp(1.35rem, 3vw, 2.2rem);
+  line-height: 1.12;
+}
+
+.contact-card a:hover,
+.site-footer a:hover {
+  color: var(--orange);
+}
+
+.broker-choice-section {
+  padding-top: 0;
+}
+
+.cta-section {
+  padding-top: 0;
+}
+
+.cta-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding: clamp(26px, 5vw, 42px);
+  color: #fff;
+  background: linear-gradient(135deg, var(--navy), #16395f);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.cta-panel h2 {
+  max-width: 780px;
+  color: #fff;
+  font-size: clamp(1.8rem, 3vw, 2.75rem);
+}
+
+.cta-panel p {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.cta-panel .eyebrow {
+  color: var(--orange);
+}
+
+.broker-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.broker-grid article {
+  min-height: 168px;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 12px 35px rgba(7, 26, 49, 0.07);
+}
+
+.broker-grid strong {
+  display: block;
+  color: var(--navy);
+  font-size: 1.02rem;
+  line-height: 1.25;
+}
+
+.broker-grid p {
+  margin: 12px 0 0;
+}
+
+.lead-form-section {
+  scroll-margin-top: 90px;
+}
+
+.form-shell {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.65fr) minmax(0, 1.35fr);
+  gap: clamp(28px, 5vw, 58px);
+  align-items: start;
+}
+
+.form-copy {
+  position: sticky;
+  top: 104px;
+}
+
+.lead-form {
+  padding: clamp(22px, 4vw, 34px);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.lead-form label {
+  display: grid;
+  gap: 8px;
+  color: var(--steel);
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+.lead-form input,
+.lead-form select,
+.lead-form textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 13px;
+  color: var(--ink);
+  font: inherit;
+  font-size: 1rem;
+  background: #fff;
+  border: 1px solid #cbd6e4;
+  border-radius: 6px;
+}
+
+.lead-form textarea {
+  min-height: 118px;
+  resize: vertical;
+}
+
+.lead-form input::placeholder,
+.lead-form textarea::placeholder {
+  color: #8a98aa;
+}
+
+.lead-form .full-span {
+  grid-column: 1 / -1;
+}
+
+.lead-form .field-invalid {
+  border-color: var(--dan•È¤ì(€‰½àµÍ¡…‘½Üè€À€À€À€ÍÁàÉ‰„ ÄàÀ°€ÌÔ°€ÈĞ°€À¸Àà¤ì)ô((¹™½É´µ•ÉÉ½È°(¹™½É´µÍÕ•ÍÌì(€‘¥ÍÁ±…äè¹½¹”ì(€µ…É¥¸è€ÄáÁà€À€Àì(€Á…‘‘¥¹œè€ÄÉÁà€ÄÑÁàì(€‰½É‘•ÈµÉ…‘¥ÕÌè€ÙÁàì(€™½¹Ğµİ•¥¡Ğè€àÀÀì)ô((¹™½É´µ•ÉÉ½Èì(€½±½ÈèÙ…È ´µ‘…¹•È¤ì(€‰…­É½Õ¹è€™™˜Å˜Àì(€‰½É‘•Èè€ÅÁàÍ½±¥€™™ÅŒì)ô((¹™½É´µÍÕ•ÍÌì(€½±½ÈèÙ…È ´µÍÕ•ÍÌ¤ì(€‰…­É½Õ¹è€•™™…˜Ğì(€‰½É‘•Èè€ÅÁàÍ½±¥€‰™”á˜ì)ô((¹™½É´µ•ÉÉ½È¹¥ÌµÙ¥Í¥‰±”°(¹™½É´µÍÕ•ÍÌ¹¥ÌµÙ¥Í¥‰±”ì(€‘¥ÍÁ±…äè‰±½¬ì)ô((¹±•…µ™½É´€¹‰Ñ¸ì(€µ…É¥¸µÑ½Àè€ÈÉÁàì)ô((¹É•‘•¹Ñ¥…°µÉ¥ì(€‘¥ÍÁ±…äèÉ¥ì(€É¥µÑ•µÁ±…Ñ”µ½±Õµ¹ÌèÉ•Á•…Ğ È°µ¥¹µ…à ÄØÁÁà°€Å™È¤¤ì(€…Àè€ÅÁàì(€µ¥¸µİ¥‘Ñ èµ¥¸ ĞÌÁÁà°€ÄÀÀ”¤ì(€½Ù•É™±½Üè¡¥‘‘•¸ì(€‰…­É½Õ¹èÙ…È ´µ±¥¹”¤ì(€‰½É‘•ÈµÉ…‘¥ÕÌè€áÁàì)ô((¹Í¥Ñ”µ™½½Ñ•Èì(€Á…‘‘¥¹œè€ĞÑÁà€Àì(€½±½ÈèÉ‰„ ÈÔÔ°€ÈÔÔ°€ÈÔÔ°€À¸Üà¤ì(€‰…­É½Õ¹è€ŒÄÀÅ„Èäì)ô((¹Í¥Ñ”µ™½½Ñ•ÈÍÑÉ½¹œì(€‘¥ÍÁ±…äè‰±½¬ì(€½±½Èè€™™˜ì(€µ…É¥¸µ‰½ÑÑ½´è€áÁàì)ô((¹Í¥Ñ”µ™½½Ñ•ÈÀì(€µ…É¥¸è€Àì(€½±½ÈèÉ‰„ ÈÔÔ°€ÈÔÔ°€ÈÔÔ°€À¸Øà¤ì)ô((¹Í¥Ñ”µ™½½Ñ•È„ì(€‘¥ÍÁ±…äè¥¹±¥¹”µ‰±½¬ì(€µ…É¥¸µÑ½Àè€ÙÁàì(€½±½Èè€™™˜ì(€™½¹Ğµİ•¥¡Ğè€ÜÀÀì)ô((¹™½½Ñ•ÈµÉ¥ì(€‘¥ÍÁ±…äèÉ¥ì(€É¥µÑ•µÁ±…Ñ”µ½±Õµ¹Ìè€Ä¸Í™ÈÉ•Á•…Ğ Ì°€Å™È¤ì(€…Àè€ÈáÁàì)ô()µ•‘¥„€¡µ…àµİ¥‘Ñ è€äÀÁÁà¤ì(€€¹¹…ØµÑ½±”ì(€€€‘¥ÍÁ±…äè‰±½¬ì(€ô((€€¹Í¥Ñ”µ¹…Øì(€€€Á½Í¥Ñ¥½¸è…‰Í½±ÕÑ”ì(€€€Ñ½Àè€ÄÀÀ”ì(€€€±•™Ğè€ÈÁÁàì(€€€É¥¡Ğè€ÈÁÁàì(€€€‘¥ÍÁ±…äè¹½¹”ì(€€€™±•àµ‘¥É•Ñ¥½¸è½±Õµ¸ì(€€€…±¥¸µ¥Ñ•µÌèÍÑÉ•Ñ ì(€€€Á…‘‘¥¹œè€ÄÉÁàì(€€€‰…­É½Õ¹è€™™˜ì(€€€‰½É‘•Èè€ÅÁàÍ½±¥Ù…È ´µ±¥¹”¤ì(€€€‰½É‘•ÈµÉ…‘¥ÕÌè€áÁàì(€€€‰½àµÍ¡…‘½ÜèÙ…È ´µÍ¡…‘½Ü¤ì(€ô((€€¹Í¥Ñ”µ¹…Ø¹½Á•¸ì(€€€‘¥ÍÁ±…äè™±•àì(€ô((€€¹Í¥Ñ”µ¹…Ø„ì(€€€Á…‘‘¥¹œè€ÄÉÁàì(€ô((€€¹¡•É¼ì(€€€µ¥¸µ¡•¥¡Ğè€ØàÁÁàì(€ô((€€¹¡•É¼µ½Ù•É±…äì(€€€‰…­É½Õ¹è±¥¹•…ÈµÉ…‘¥•¹Ğ äÁ‘•œ°É‰„ ÄÀ°€ÈÌ°€ĞÀ°€À¸ÜĞ¤°É‰„ ÄÀ°€ÈÌ°€ĞÀ°€À¸ÌØ¤¤ì(€ô((€€¹ÍÑ…ĞµÍÑÉ¥À°(€€¹ÑÉÕÍĞµ‰…‘•Ì°(€€¹…ÉµÉ¥¹Ñ¡É•”°(€€¹Í•ÉÙ¥”µÉ¥°(€€¹‰É½­•ÈµÉ¥°(€€¹ÍÁ±¥Ğ°(€€¹ÍÁ±¥Ğ¹É•Ù•ÉÍ”°(€€¹½¹Ñ…ĞµÉ¥°(€€¹…‰½ÕĞµÉ¥°(€€¹½¹Ñ…Ğµ…É‘Ì°(€€¹™½É´µÍ¡•±°°(€€¹™½½Ñ•ÈµÉ¥ì(€€€É¥µÑ•µÁ±…Ñ”µ½±Õµ¹Ìè€Å™Èì(€ô((€€¹Ñ„µÁ…¹•°ì(€€€…±¥¸µ¥Ñ•µÌè™±•àµÍÑ…ÉĞì(€€€™±•àµ‘¥É•Ñ¥½¸è½±Õµ¸ì(€ô((€€¹Í•ÉÙ¥”µÉ¥€¹Í•ÉÙ¥”µ…Éì(€€€É¥µ½±Õµ¸è…ÕÑ¼ì(€ô((€€¹ÍÑ…ĞµÍÑÉ¥Àì(€€€µ…É¥¸µÑ½Àè€´ÌÙÁàì(€ô((€€¹½¹Ñ…ĞµÑ„°(€€¹…ÁÁ±¥…Ñ¥½¸µÁ…¹•°°(€€¹É•‘•¹Ñ¥…°µÁ…¹•°ì(€€€…±¥¸µ¥Ñ•µÌè™±•àµÍÑ…ÉĞì(€€€™±•àµ‘¥É•Ñ¥½¸è½±Õµ¸ì(€ô((€€¹™½É´µ½Áäì(€€€Á½Í¥Ñ¥½¸èÍÑ…Ñ¥Œì(€ô)ô()µ•‘¥„€¡µ…àµİ¥‘Ñ è€ÔØÁÁà¤ì(€€¹½¹Ñ…¥¹•Èì(€€€İ¥‘Ñ èµ¥¸ ÄÀÀ”€´€ÈáÁà°€ÄÄÈÁÁà¤ì(€ô((€€¹Í¥Ñ”µ¡•…‘•Èì(€€€µ¥¸µ¡•¥¡Ğè€ÜÁÁàì(€€€Á…‘‘¥¹œè€ÄÉÁà€ÄÑÁàì(€ô((€€¹‰É…¹ÍÑÉ½¹œì(€€€™½¹ĞµÍ¥é”è€À¸äÉÉ•´ì(€ô((€€¹‰É…¹Íµ…±°ì(€€€™½¹ĞµÍ¥é”è€À¸ÜÉÉ•´ì(€ô((€€¹¡•É¼ì(€€€µ¥¸µ¡•¥¡Ğè€ØĞÁÁàì(€€€Á…‘‘¥¹œµÑ½Àè€ÄÄÁÁàì(€ô((€€¹¡•É¼µ½¹Ñ•¹Ğ Äì(€€€™½¹ĞµÍ¥é”è±…µÀ È¸ÉÉ•´°€ÄÍÙÜ°€Ì¸ÉÉ•´¤ì(€ô((€€¹¡•É¼µ…Ñ¥½¹Ì°(€€¹½¹Ñ…Ğµ…Ñ¥½¹Ì°(€€¹Í•Ñ¥½¸µ…Ñ¥½¹Ìì(€€€™±•àµ‘¥É•Ñ¥½¸è½±Õµ¸ì(€ô((€€¹‰Ñ¸ì(€€€İ¥‘Ñ è€ÄÀÀ”ì(€ô((€€¹Í•Ñ¥½¸ì(€€€Á…‘‘¥¹œè€ØáÁà€Àì(€ô((€€¹ÍÑ…ĞµÍÑÉ¥À‘¥Ø°(€€¹ÑÉÕÍĞµ‰…‘•Ì‘¥Ø°(€€¹Í•ÉÙ¥”µ…É°(€€¹‘•Ñ…¥°µ…É°(€€¹½¹Ñ…Ğµ…É°(€€¹ÁÉ½É…´µ…É°(€€¹‰É½­•ÈµÉ¥…ÉÑ¥±”ì(€€€Á…‘‘¥¹œè€ÈÉÁàì(€ô((€€¹™½É´µÉ¥ì(€€€É¥µÑ•µÁ±…Ñ”µ½±Õµ¹Ìè€Å™Èì(€ô((€€¹±•…µ™½É´ì(€€€Á…‘‘¥¹œè€ÈÁÁàì(€ô((€€¹ÑÉÕÍĞµÍ•Ñ¥½¸ì(€€€Á…‘‘¥¹œµÑ½Àè€ĞÑÁàì(€ô((€€¹¥µ…”µÁ…¹•°ì(€€€µ¥¸µ¡•¥¡Ğè€ÈàÁÁàì(€ô((€€¹Á…”µ¡•É¼ì(€€€Á…‘‘¥¹œè€ÄÈÙÁà€À€ØÉÁàì(€ô((€€¹É•‘•¹Ñ¥…°µÉ¥ì(€€€É¥µÑ•µÁ±…Ñ”µ½±Õµ¹Ìè€Å™Èì(€ô)ô(
