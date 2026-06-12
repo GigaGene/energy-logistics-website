@@ -1,3 +1,29 @@
+const heroPhotoStyle = document.createElement("style");
+heroPhotoStyle.textContent = `
+  .hero-media {
+    background-image: url("./assets/energy-logistics-hero.jpg");
+    background-size: cover;
+    background-position: center center;
+    z-index: 0;
+  }
+
+  .hero-overlay {
+    z-index: 1;
+    background: linear-gradient(90deg, rgba(7, 20, 38, 0.68) 0%, rgba(7, 20, 38, 0.42) 48%, rgba(7, 20, 38, 0.08) 100%);
+  }
+
+  .hero-content {
+    z-index: 2;
+  }
+
+  @media (max-width: 900px) {
+    .hero-overlay {
+      background: linear-gradient(90deg, rgba(10, 23, 40, 0.74), rgba(10, 23, 40, 0.36));
+    }
+  }
+`;
+document.head.appendChild(heroPhotoStyle);
+
 const navToggle = document.querySelector("[data-nav-toggle]");
 const nav = document.querySelector("[data-nav]");
 const header = document.querySelector("[data-header]");

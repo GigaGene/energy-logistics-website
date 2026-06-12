@@ -152,18 +152,16 @@ img {
 .hero-media {
   background-image: url("./assets/energy-logistics-hero.jpg");
   background-size: cover;
-  background-position: center center;
-  z-index: 0;
+  background-position: center;
 }
 
 .hero-overlay {
-  z-index: 1;
-  background: linear-gradient(90deg, rgba(7, 20, 38, 0.68) 0%, rgba(7, 20, 38, 0.42) 48%, rgba(7, 20, 38, 0.08) 100%);
+  background: linear-gradient(90deg, rgba(7, 20, 38, 0.92) 0%, rgba(7, 20, 38, 0.72) 48%, rgba(7, 20, 38, 0.18) 100%);
 }
 
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   color: #fff;
   max-width: 1120px;
 }
@@ -554,8 +552,8 @@ p {
   padding: 160px 0 78px;
   color: #fff;
   background:
-    linear-gradient(90deg, rgba(10, 23, 40, 0.68), rgba(10, 23, 40, 0.38)),
-    url("./assets/energy-logistics-hero.jpg") center center / cover;
+    linear-gradient(90deg, rgba(10, 23, 40, 0.92), rgba(10, 23, 40, 0.7)),
+    url("./assets/energy-logistics-hero.jpg") center / cover;
 }
 
 .page-hero h1 {
@@ -781,4 +779,228 @@ p {
 }
 
 .lead-form .field-invalid {
-  border-color: var(--dan•È¤ì(€‰½àµÍ¡…‘½Üè€À€À€À€ÍÁàÉ‰„ ÄàÀ°€ÌÔ°€ÈĞ°€À¸Àà¤ì)ô((¹™½É´µ•ÉÉ½È°(¹™½É´µÍÕ•ÍÌì(€‘¥ÍÁ±…äè¹½¹”ì(€µ…É¥¸è€ÄáÁà€À€Àì(€Á…‘‘¥¹œè€ÄÉÁà€ÄÑÁàì(€‰½É‘•ÈµÉ…‘¥ÕÌè€ÙÁàì(€™½¹Ğµİ•¥¡Ğè€àÀÀì)ô((¹™½É´µ•ÉÉ½Èì(€½±½ÈèÙ…È ´µ‘…¹•È¤ì(€‰…­É½Õ¹è€™™˜Å˜Àì(€‰½É‘•Èè€ÅÁàÍ½±¥€™™ÅŒì)ô((¹™½É´µÍÕ•ÍÌì(€½±½ÈèÙ…È ´µÍÕ•ÍÌ¤ì(€‰…­É½Õ¹è€•™™…˜Ğì(€‰½É‘•Èè€ÅÁàÍ½±¥€‰™”á˜ì)ô((¹™½É´µ•ÉÉ½È¹¥ÌµÙ¥Í¥‰±”°(¹™½É´µÍÕ•ÍÌ¹¥ÌµÙ¥Í¥‰±”ì(€‘¥ÍÁ±…äè‰±½¬ì)ô((¹±•…µ™½É´€¹‰Ñ¸ì(€µ…É¥¸µÑ½Àè€ÈÉÁàì)ô((¹É•‘•¹Ñ¥…°µÉ¥ì(€‘¥ÍÁ±…äèÉ¥ì(€É¥µÑ•µÁ±…Ñ”µ½±Õµ¹ÌèÉ•Á•…Ğ È°µ¥¹µ…à ÄØÁÁà°€Å™È¤¤ì(€…Àè€ÅÁàì(€µ¥¸µİ¥‘Ñ èµ¥¸ ĞÌÁÁà°€ÄÀÀ”¤ì(€½Ù•É™±½Üè¡¥‘‘•¸ì(€‰…­É½Õ¹èÙ…È ´µ±¥¹”¤ì(€‰½É‘•ÈµÉ…‘¥ÕÌè€áÁàì)ô((¹Í¥Ñ”µ™½½Ñ•Èì(€Á…‘‘¥¹œè€ĞÑÁà€Àì(€½±½ÈèÉ‰„ ÈÔÔ°€ÈÔÔ°€ÈÔÔ°€À¸Üà¤ì(€‰…­É½Õ¹è€ŒÄÀÅ„Èäì)ô((¹Í¥Ñ”µ™½½Ñ•ÈÍÑÉ½¹œì(€‘¥ÍÁ±…äè‰±½¬ì(€½±½Èè€™™˜ì(€µ…É¥¸µ‰½ÑÑ½´è€áÁàì)ô((¹Í¥Ñ”µ™½½Ñ•ÈÀì(€µ…É¥¸è€Àì(€½±½ÈèÉ‰„ ÈÔÔ°€ÈÔÔ°€ÈÔÔ°€À¸Øà¤ì)ô((¹Í¥Ñ”µ™½½Ñ•È„ì(€‘¥ÍÁ±…äè¥¹±¥¹”µ‰±½¬ì(€µ…É¥¸µÑ½Àè€ÙÁàì(€½±½Èè€™™˜ì(€™½¹Ğµİ•¥¡Ğè€ÜÀÀì)ô((¹™½½Ñ•ÈµÉ¥ì(€‘¥ÍÁ±…äèÉ¥ì(€É¥µÑ•µÁ±…Ñ”µ½±Õµ¹Ìè€Ä¸Í™ÈÉ•Á•…Ğ Ì°€Å™È¤ì(€…Àè€ÈáÁàì)ô()µ•‘¥„€¡µ…àµİ¥‘Ñ è€äÀÁÁà¤ì(€€¹¹…ØµÑ½±”ì(€€€‘¥ÍÁ±…äè‰±½¬ì(€ô((€€¹Í¥Ñ”µ¹…Øì(€€€Á½Í¥Ñ¥½¸è…‰Í½±ÕÑ”ì(€€€Ñ½Àè€ÄÀÀ”ì(€€€±•™Ğè€ÈÁÁàì(€€€É¥¡Ğè€ÈÁÁàì(€€€‘¥ÍÁ±…äè¹½¹”ì(€€€™±•àµ‘¥É•Ñ¥½¸è½±Õµ¸ì(€€€…±¥¸µ¥Ñ•µÌèÍÑÉ•Ñ ì(€€€Á…‘‘¥¹œè€ÄÉÁàì(€€€‰…­É½Õ¹è€™™˜ì(€€€‰½É‘•Èè€ÅÁàÍ½±¥Ù…È ´µ±¥¹”¤ì(€€€‰½É‘•ÈµÉ…‘¥ÕÌè€áÁàì(€€€‰½àµÍ¡…‘½ÜèÙ…È ´µÍ¡…‘½Ü¤ì(€ô((€€¹Í¥Ñ”µ¹…Ø¹½Á•¸ì(€€€‘¥ÍÁ±…äè™±•àì(€ô((€€¹Í¥Ñ”µ¹…Ø„ì(€€€Á…‘‘¥¹œè€ÄÉÁàì(€ô((€€¹¡•É¼ì(€€€µ¥¸µ¡•¥¡Ğè€ØàÁÁàì(€ô((€€¹¡•É¼µ½Ù•É±…äì(€€€‰…­É½Õ¹è±¥¹•…ÈµÉ…‘¥•¹Ğ äÁ‘•œ°É‰„ ÄÀ°€ÈÌ°€ĞÀ°€À¸ÜĞ¤°É‰„ ÄÀ°€ÈÌ°€ĞÀ°€À¸ÌØ¤¤ì(€ô((€€¹ÍÑ…ĞµÍÑÉ¥À°(€€¹ÑÉÕÍĞµ‰…‘•Ì°(€€¹…ÉµÉ¥¹Ñ¡É•”°(€€¹Í•ÉÙ¥”µÉ¥°(€€¹‰É½­•ÈµÉ¥°(€€¹ÍÁ±¥Ğ°(€€¹ÍÁ±¥Ğ¹É•Ù•ÉÍ”°(€€¹½¹Ñ…ĞµÉ¥°(€€¹…‰½ÕĞµÉ¥°(€€¹½¹Ñ…Ğµ…É‘Ì°(€€¹™½É´µÍ¡•±°°(€€¹™½½Ñ•ÈµÉ¥ì(€€€É¥µÑ•µÁ±…Ñ”µ½±Õµ¹Ìè€Å™Èì(€ô((€€¹Ñ„µÁ…¹•°ì(€€€…±¥¸µ¥Ñ•µÌè™±•àµÍÑ…ÉĞì(€€€™±•àµ‘¥É•Ñ¥½¸è½±Õµ¸ì(€ô((€€¹Í•ÉÙ¥”µÉ¥€¹Í•ÉÙ¥”µ…Éì(€€€É¥µ½±Õµ¸è…ÕÑ¼ì(€ô((€€¹ÍÑ…ĞµÍÑÉ¥Àì(€€€µ…É¥¸µÑ½Àè€´ÌÙÁàì(€ô((€€¹½¹Ñ…ĞµÑ„°(€€¹…ÁÁ±¥…Ñ¥½¸µÁ…¹•°°(€€¹É•‘•¹Ñ¥…°µÁ…¹•°ì(€€€…±¥¸µ¥Ñ•µÌè™±•àµÍÑ…ÉĞì(€€€™±•àµ‘¥É•Ñ¥½¸è½±Õµ¸ì(€ô((€€¹™½É´µ½Áäì(€€€Á½Í¥Ñ¥½¸èÍÑ…Ñ¥Œì(€ô)ô()µ•‘¥„€¡µ…àµİ¥‘Ñ è€ÔØÁÁà¤ì(€€¹½¹Ñ…¥¹•Èì(€€€İ¥‘Ñ èµ¥¸ ÄÀÀ”€´€ÈáÁà°€ÄÄÈÁÁà¤ì(€ô((€€¹Í¥Ñ”µ¡•…‘•Èì(€€€µ¥¸µ¡•¥¡Ğè€ÜÁÁàì(€€€Á…‘‘¥¹œè€ÄÉÁà€ÄÑÁàì(€ô((€€¹‰É…¹ÍÑÉ½¹œì(€€€™½¹ĞµÍ¥é”è€À¸äÉÉ•´ì(€ô((€€¹‰É…¹Íµ…±°ì(€€€™½¹ĞµÍ¥é”è€À¸ÜÉÉ•´ì(€ô((€€¹¡•É¼ì(€€€µ¥¸µ¡•¥¡Ğè€ØĞÁÁàì(€€€Á…‘‘¥¹œµÑ½Àè€ÄÄÁÁàì(€ô((€€¹¡•É¼µ½¹Ñ•¹Ğ Äì(€€€™½¹ĞµÍ¥é”è±…µÀ È¸ÉÉ•´°€ÄÍÙÜ°€Ì¸ÉÉ•´¤ì(€ô((€€¹¡•É¼µ…Ñ¥½¹Ì°(€€¹½¹Ñ…Ğµ…Ñ¥½¹Ì°(€€¹Í•Ñ¥½¸µ…Ñ¥½¹Ìì(€€€™±•àµ‘¥É•Ñ¥½¸è½±Õµ¸ì(€ô((€€¹‰Ñ¸ì(€€€İ¥‘Ñ è€ÄÀÀ”ì(€ô((€€¹Í•Ñ¥½¸ì(€€€Á…‘‘¥¹œè€ØáÁà€Àì(€ô((€€¹ÍÑ…ĞµÍÑÉ¥À‘¥Ø°(€€¹ÑÉÕÍĞµ‰…‘•Ì‘¥Ø°(€€¹Í•ÉÙ¥”µ…É°(€€¹‘•Ñ…¥°µ…É°(€€¹½¹Ñ…Ğµ…É°(€€¹ÁÉ½É…´µ…É°(€€¹‰É½­•ÈµÉ¥…ÉÑ¥±”ì(€€€Á…‘‘¥¹œè€ÈÉÁàì(€ô((€€¹™½É´µÉ¥ì(€€€É¥µÑ•µÁ±…Ñ”µ½±Õµ¹Ìè€Å™Èì(€ô((€€¹±•…µ™½É´ì(€€€Á…‘‘¥¹œè€ÈÁÁàì(€ô((€€¹ÑÉÕÍĞµÍ•Ñ¥½¸ì(€€€Á…‘‘¥¹œµÑ½Àè€ĞÑÁàì(€ô((€€¹¥µ…”µÁ…¹•°ì(€€€µ¥¸µ¡•¥¡Ğè€ÈàÁÁàì(€ô((€€¹Á…”µ¡•É¼ì(€€€Á…‘‘¥¹œè€ÄÈÙÁà€À€ØÉÁàì(€ô((€€¹É•‘•¹Ñ¥…°µÉ¥ì(€€€É¥µÑ•µÁ±…Ñ”µ½±Õµ¹Ìè€Å™Èì(€ô)ô(
+  border-color: var(--danger);
+  box-shadow: 0 0 0 3px rgba(180, 35, 24, 0.08);
+}
+
+.form-error,
+.form-success {
+  display: none;
+  margin: 18px 0 0;
+  padding: 12px 14px;
+  border-radius: 6px;
+  font-weight: 800;
+}
+
+.form-error {
+  color: var(--danger);
+  background: #fff1f0;
+  border: 1px solid #ffd1cc;
+}
+
+.form-success {
+  color: var(--success);
+  background: #effaf4;
+  border: 1px solid #bfe8cf;
+}
+
+.form-error.is-visible,
+.form-success.is-visible {
+  display: block;
+}
+
+.lead-form .btn {
+  margin-top: 22px;
+}
+
+.credential-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(160px, 1fr));
+  gap: 1px;
+  min-width: min(430px, 100%);
+  overflow: hidden;
+  background: var(--line);
+  border-radius: 8px;
+}
+
+.site-footer {
+  padding: 44px 0;
+  color: rgba(255, 255, 255, 0.78);
+  background: #101a29;
+}
+
+.site-footer strong {
+  display: block;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.site-footer p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.site-footer a {
+  display: inline-block;
+  margin-top: 6px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.3fr repeat(3, 1fr);
+  gap: 28px;
+}
+
+@media (max-width: 900px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    right: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+  }
+
+  .site-nav.open {
+    display: flex;
+  }
+
+  .site-nav a {
+    padding: 12px;
+  }
+
+  .hero {
+    min-height: 680px;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(90deg, rgba(10, 23, 40, 0.92), rgba(10, 23, 40, 0.56));
+  }
+
+  .stat-strip,
+  .trust-badges,
+  .card-grid.three,
+  .service-grid,
+  .broker-grid,
+  .split,
+  .split.reverse,
+  .contact-grid,
+  .about-grid,
+  .contact-cards,
+  .form-shell,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-panel {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .service-grid .service-card {
+    grid-column: auto;
+  }
+
+  .stat-strip {
+    margin-top: -36px;
+  }
+
+  .contact-cta,
+  .application-panel,
+  .credential-panel {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .form-copy {
+    position: static;
+  }
+}
+
+@media (max-width: 560px) {
+  .container {
+    width: min(100% - 28px, 1120px);
+  }
+
+  .site-header {
+    min-height: 70px;
+    padding: 12px 14px;
+  }
+
+  .brand strong {
+    font-size: 0.92rem;
+  }
+
+  .brand small {
+    font-size: 0.72rem;
+  }
+
+  .hero {
+    min-height: 640px;
+    padding-top: 110px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(2.2rem, 13vw, 3.2rem);
+  }
+
+  .hero-actions,
+  .contact-actions,
+  .section-actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .section {
+    padding: 68px 0;
+  }
+
+  .stat-strip div,
+  .trust-badges div,
+  .service-card,
+  .detail-card,
+  .contact-card,
+  .program-card,
+  .broker-grid article {
+    padding: 22px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lead-form {
+    padding: 20px;
+  }
+
+  .trust-section {
+    padding-top: 44px;
+  }
+
+  .image-panel {
+    min-height: 280px;
+  }
+
+  .page-hero {
+    padding: 126px 0 62px;
+  }
+
+  .credential-grid {
+    grid-template-columns: 1fr;
+  }
+}
