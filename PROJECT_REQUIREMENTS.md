@@ -10,7 +10,7 @@
 
 ## Contact
 
-**Dispatch:** [energylog.dispatch@gmail.com](mailto:energylog.dispatch@gmail.com)  
+**Dispatch:** [dispatch@energylog.org](mailto:dispatch@energylog.org)  
 **HR:** [hrenergylog@gmail.com](mailto:hrenergylog@gmail.com)
 
 ## Slogan
@@ -101,7 +101,7 @@ Owner operator program details:
 
 Owner operator contact:
 
-- Dispatch: [energylog.dispatch@gmail.com](mailto:energylog.dispatch@gmail.com)
+- HR: [hrenergylog@gmail.com](mailto:hrenergylog@gmail.com)
 
 ## Broker Partnerships
 
@@ -115,7 +115,7 @@ The website should include messaging for freight brokers that emphasizes:
 
 Broker partnership contact:
 
-- Dispatch: [energylog.dispatch@gmail.com](mailto:energylog.dispatch@gmail.com)
+- Dispatch: [dispatch@energylog.org](mailto:dispatch@energylog.org)
 
 ## Brand Direction
 

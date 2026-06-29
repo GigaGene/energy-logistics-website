@@ -1,0 +1,38 @@
+RewriteEngine On
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+Options -Indexes
+ServerSignature Off
+
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+  Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; img-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self'; upgrade-insecure-requests"
+  Header always set X-Frame-Options "DENY"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()"
+  Header always set Cross-Origin-Resource-Policy "same-origin"
+  Header always set X-Permitted-Cross-Domain-Policies "none"
+</IfModule>
+
+<FilesMatch "^\.env">
+  Require all denied
+</FilesMatch>
+
+<FilesMatch "\.(?:log|sql|bak|config|ini|ps1|sh|bat)$">
+  Require all denied
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+  RewriteCond %{REQUEST_METHOD} !^(GET|POST|HEAD|OPTIONS)$
+  RewriteRule .* - [R=405,L]
+  RewriteRule ^(?:uploads|quarantine|logs|sessions|backups)/ - [F,L]
+</IfModule>
+
+RewriteRule ^services/([^/]+)/([^/]+)/?$ /landing.html [L]
+RewriteRule ^freight-carrier/([^/]+)/?$ /landing.html [L]
+RewriteRule ^refrigerated-freight/([^/]+)/?$ /landing.html [L]
+RewriteRule ^dry-van-freight/([^/]+)/?$ /landing.html [L]
+RewriteRule ^driver-jobs/([^/]+)/?$ /landing.html [L]

@@ -75,11 +75,11 @@ Preview URL:
 ## Email Button Test
 
 - [ ] Click Email Dispatch.
-- [ ] Confirm it opens an email draft to energylog.dispatch@gmail.com.
+- [ ] Confirm it opens an email draft to dispatch@energylog.org.
 - [ ] Click Email HR.
 - [ ] Confirm it opens an email draft to hrenergylog@gmail.com.
-- [ ] Confirm broker and owner operator email links go to dispatch.
-- [ ] Confirm driver email links go to HR.
+- [ ] Confirm freight quote, broker, and carrier packet email links go to dispatch.
+- [ ] Confirm driver, CDL graduate, owner operator, and recruiting email links go to HR.
 
 ## Required Field Validation Test
 
@@ -100,3 +100,14 @@ Preview URL:
 - [ ] Complete the Owner Operator Application form with valid required fields.
 - [ ] Submit the form and confirm the success message appears.
 - [ ] Confirm each form clears after successful submission.
+
+## Telegram Notification Test
+
+- [ ] Add test bot credentials to the server environment: `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID`.
+- [ ] Submit the Freight Quote Request form and confirm the test Telegram group receives a summary only.
+- [ ] Submit the Broker Resources / Carrier Packet Request form and confirm the test Telegram group receives a summary only.
+- [ ] Submit the Driver Application form with a sample upload and confirm Telegram does not receive the uploaded document.
+- [ ] Submit the Contact Form for Dispatch, HR, and Admin and confirm routing appears correctly in the Telegram summary.
+- [ ] Remove Telegram credentials and confirm form submissions still save and show the normal success message.
+- [ ] Use invalid Telegram credentials and confirm submissions still save while `logs/security.log` records `telegram_failed`.
+- [ ] Trigger a browser JavaScript error and confirm `api/report-error.php` logs it; if Telegram is configured, confirm the test group receives an error summary.

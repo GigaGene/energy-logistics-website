@@ -10,23 +10,26 @@ This website is structured as a lead-generation website for Energy Logistics LLC
 - Driver Application Form is present.
 - Owner Operator Application Form is present.
 - Required-field validation is active.
-- Success messages are active.
-- Forms create structured lead payloads in JavaScript.
-- Forms include future integration hooks for Telegram, Gmail, and Google Sheets.
+- Honeypot spam fields are active.
+- Client-side rate limiting is active.
+- Forms submit to the server-side endpoint at `api/submit-lead.php`.
+- The server endpoint validates, sanitizes, rate limits, optionally verifies Turnstile, quarantines approved uploads, logs accepted/rejected submissions, and sends summary-only notifications.
+- Private form data is no longer stored in browser `localStorage`.
 - Mobile responsive styling is included.
 - Trust badges and broker-focused proof points are included.
+- Privacy policy, terms of use, cookie notice, `.env.example`, security headers, and `SECURITY_OPERATIONS.md` are included.
 
 ## What Remains Before Public Launch
 
 ### 1. Connect Form Submissions
 
-The forms currently validate and prepare structured lead data in the browser. Before public launch, connect submissions to a secure backend or form service.
+The forms now submit to `api/submit-lead.php`. Before public launch, deploy to PHP-capable hosting and configure `.env` from `.env.example`.
 
 Recommended destinations:
 
-- Telegram lead notifications
-- Gmail email notifications
-- Google Sheets lead storage
+- Telegram lead summary notifications
+- Verified-domain email notifications
+- Private database or CRM lead storage
 
 Do not expose private API keys, bot tokens, service account credentials, or email credentials in frontend JavaScript.
 
@@ -40,22 +43,24 @@ Pick one production-safe approach:
 - Trusted form handling service
 - CRM or automation platform webhook
 
-The frontend is already prepared with `data-integrations="telegram,gmail,google-sheets"` attributes and a `submitLeadPayload` function in `script.js`.
+The frontend posts to the PHP endpoint in `script.js`. Keep secrets server-side only.
 
 ### 3. Add Spam Protection
 
-Before launch, add basic spam protection:
+Implemented spam controls:
 
 - Honeypot field
-- Rate limiting on the backend
-- CAPTCHA or turnstile if spam becomes a problem
+- Rate limiting on frontend and backend
 - Server-side validation
+- Optional Cloudflare Turnstile when `TURNSTILE_SECRET_KEY` is configured
+
+Add a visible Turnstile widget if production spam continues.
 
 ### 4. Confirm Legal and Compliance Copy
 
 Review all transportation claims and recruiting language before publishing.
 
-Confirm:
+Confirm privately, but do not place these identifiers on public marketing pages:
 
 - USDOT number
 - MC number
@@ -65,9 +70,9 @@ Confirm:
 - Owner operator program details
 - Tracking platform support claims
 
-### 5. Add Privacy Notice
+### 5. Privacy Notice
 
-Because the website collects names, emails, phone numbers, driver details, and equipment details, add a privacy notice explaining how leads are used and stored.
+The privacy policy is available at `privacy.html`. Review it with counsel before launch.
 
 ### 6. Add Analytics and Conversion Tracking
 
