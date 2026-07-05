@@ -62,11 +62,17 @@ const buildLeadPayload = (form) => {
 
 const submitLeadPayload = async (payload) => {
   // Future production integrations can be connected here:
-  // Telegram bot webhook, Gmail notification endpoint, and Google Sheets API.
+  // Gmail notification endpoint and Google Sheets API.
   const savedLeads = JSON.parse(localStorage.getItem("energyLogisticsLeads") || "[]");
   savedLeads.push(payload);
   localStorage.setItem("energyLogisticsLeads", JSON.stringify(savedLeads));
   console.info("Energy Logistics lead captured", payload);
+
+  // Fire-and-forget Telegram notification via Make.com — intentionally not
+  // awaited so the webhook can never delay or block the success message.
+  if (typeof sendLeadNotification === "function") {
+    sendLeadNotification(payload.formType, payload.fields);
+  }
 };
 
 leadForms.forEach((form) => {
